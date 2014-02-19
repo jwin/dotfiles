@@ -1,4 +1,8 @@
-syntax on
+syntax enable               "syntax highlighting
 
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+set bg=dark                 "for dark background consoles
+
+set tabstop=2               "tab = 4 spaces
+set softtabstop=2           "tab = 4 spaces
+set shiftwidth=2            "tab = 4 spaces
+set expandtab               "turn tabs in spaces
