@@ -6,3 +6,5 @@ set tabstop=2               "tab = 4 spaces
 set softtabstop=2           "tab = 4 spaces
 set shiftwidth=2            "tab = 4 spaces
 set expandtab               "turn tabs in spaces
+
+set nu                      "line numbering"
