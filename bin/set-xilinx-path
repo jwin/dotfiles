@@ -19,7 +19,6 @@ do
 	d="${XIL_SCRIPT_LOC_TMP_UNI}/$i"
 	sfn="$d/$SETTINGS_FILE"
 	if [[ -e  "$sfn" ]]; then
-		echo . "$sfn" "$d"
 		. "$sfn" "$d"
 	fi
 done
