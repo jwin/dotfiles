@@ -1,0 +1,25 @@
+#!/usr/bin/zsh
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SETTINGS_FILE=.settings64.sh
+if [ $# != 0 ]; then
+  # The first argument is the location of Xilinx Installation.
+  # Don't detect the installation location.
+  XIL_SCRIPT_LOC="$1"
+else
+  print Please specify the location of the Xilinx Installation
+  return -1
+fi
+
+xlnxInstLocList=('.' 'ids_lite/EDK' '../../Vivado_HLS/2013.2' '../../SDK/2013.2')
+
+XIL_SCRIPT_LOC_TMP_UNI=${XIL_SCRIPT_LOC}
+for i in $xlnxInstLocList
+do
+	d="${XIL_SCRIPT_LOC_TMP_UNI}/$i"
+	sfn="$d/$SETTINGS_FILE"
+	if [[ -e  "$sfn" ]]; then
+		echo . "$sfn" "$d"
+		. "$sfn" "$d"
+	fi
+done
