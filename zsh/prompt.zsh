@@ -52,7 +52,7 @@ directory_name() {
 }
 
 user_name() {
-  echo "%{$fg_bold[green]%}%n%{$reset_color%}"
+  echo "%{$fg_bold[blue]%}%n%{$reset_color%}"
 }
 
 export PROMPT=$'\n$(user_name) @ $(directory_name) $(git_dirty)$(need_push)\n› '
