@@ -11,7 +11,7 @@ else
   return -1
 fi
 
-xlnxInstLocList=('.' 'ids_lite/EDK' '../../Vivado_HLS/2013.2' '../../SDK/2013.2')
+xlnxInstLocList=('.' 'ids_lite/EDK' '../../Vivado_HLS/2013.4' '../../SDK/2013.4')
 
 XIL_SCRIPT_LOC_TMP_UNI=${XIL_SCRIPT_LOC}
 for i in $xlnxInstLocList
