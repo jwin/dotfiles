@@ -1,12 +1,3 @@
-syntax enable               "syntax highlighting
-
-set bg=dark                 "for dark background consoles
-
-set tabstop=2               "tab = 2 spaces
-set softtabstop=2           "tab = 2 spaces
-set shiftwidth=2            "tab = 2 spaces
-set expandtab               "turn tabs in spaces
-
-set nu                      "line numbering"
-
+execute pathogen#infect()
+syntax enable            
 filetype plugin indent on
