@@ -6,7 +6,7 @@
 #
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle
-curl https://tpo.pe/pathogen.vim > ~/.vim/autoload/pathogen.vim
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 cd ~/.vim/bundle && \
-git clone git://github.com/tpope/vim-sensible.git
+git clone http://github.com/tpope/vim-sensible.git
