@@ -7,7 +7,7 @@
 export ZSH=$HOME/.dotfiles
 
 # run osx specific packages
-if [ "$(uname -s)" == "Darwin" ]
+if [ "$(uname -s)" = "Darwin" ]
 then
   # Set OS X defaults
   $ZSH/osx/set-defaults.sh
