@@ -1,10 +1,5 @@
-syntax enable               "syntax highlighting
-
-set bg=dark                 "for dark background consoles
-
-set tabstop=2               "tab = 4 spaces
-set softtabstop=2           "tab = 4 spaces
-set shiftwidth=2            "tab = 4 spaces
-set expandtab               "turn tabs in spaces
-
-set nu                      "line numbering"
+execute pathogen#infect()
+syntax enable            
+filetype plugin indent on
+set background=dark
+nmap <F8> :TagbarToggle<CR>
