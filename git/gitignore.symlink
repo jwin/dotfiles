@@ -1,11 +1,13 @@
+# General
 .DS_Store
 .svn
 *~
 *.swp
+
+# Eclipse
 *.rbc*.pydevproject
 .metadata
 .gradle
-bin/
 tmp/
 *.tmp
 *.bak

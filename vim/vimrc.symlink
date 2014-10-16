@@ -1,5 +1,11 @@
 execute pathogen#infect()
 syntax enable            
 filetype plugin indent on
+
 set background=dark
 nmap <F8> :TagbarToggle<CR>
+
+" No tabs, two spaces per tab
+set tabstop=2
+set shiftwidth=2
+set expandtab
